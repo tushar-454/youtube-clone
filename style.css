@@ -164,6 +164,7 @@
   padding: 0.4rem 0rem;
   transition: 0.3s;
   cursor: pointer;
+  margin-left: 3rem;
 }
 .tagWraper div {
   margin-right: 1.5rem;
@@ -281,4 +282,20 @@
   display: grid;
   grid-template-columns: 320px 320px 320px 320px 320px;
   grid-gap: 10px 12px;
+}
+
+@media (max-width:1500px) {
+  .row {
+    grid-template-columns: 320px 320px 320px 320px;
+  }
+}
+@media (max-width:1200px) {
+  .row {
+    grid-template-columns: 320px 320px 320px;
+  }
+}
+@media (max-width:992px) {
+  .row {
+    grid-template-columns: 320px 320px;
+  }
 }
