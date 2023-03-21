@@ -220,7 +220,7 @@
 .singleVideoCard {
   width: 320px;
   height: auto;
-  margin: 12px;
+  margin: 15px;
 }
 
 .ytVideoThumb {
@@ -263,13 +263,13 @@
 }
 
 .ytChannelName p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .ytVideoViewsandDate {
   display: flex;
   justify-content: start;
   align-items: center;
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 5px;
   color: #474747;
 }
