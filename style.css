@@ -8,10 +8,21 @@
   font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background: white; 
+}
+::-webkit-scrollbar-thumb {
+  background: #c8c8c8; 
+}
+
 .container {
-  width: 100vw;
+  width: 99%;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .headWrap {
@@ -24,20 +35,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
 }
 
 .barIcon {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .brandImg {
-  width: 7rem;
+  width: 6rem;
   margin-left: 1.5rem;
 }
 .searchBox {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40rem;
 }
 
 .searchInputWithBtn {
@@ -45,14 +59,14 @@
   justify-content: center;
   align-items: center;
   margin-right: 2rem;
-  width: 40rem;
+  width: 100%;
 }
 
 .searchInputWithBtn input {
   font-size: 1rem;
   outline: none;
   border: 1px solid #3333337d;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 50px 0px 0px 50px;
   width: 100%;
 }
@@ -63,36 +77,39 @@
   border-radius: 0px 50px 50px 0px;
   width: 80px;
   padding: 0rem 2rem;
-  height: 53px;
+  height: 37px;
   border-left: none;
   display: grid;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .voiceInput {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .createNotifyUser {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .create {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .notify {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .user {
   font-size: 1rem;
   background: purple;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: grid;
   place-items: center;
   border-radius: 100%;
@@ -101,4 +118,87 @@
 
 .createNotifyUser div {
   margin-left: 1rem;
+}
+
+.mainBodyWrap {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.asideSection {
+  /* padding-right: 1rem; */
+  width: 5%;
+  flex: 0 0 auto;
+}
+.initalTagSlider {
+  margin-bottom: 1.5rem;
+}
+.singleTag {
+  width: fit-content;
+  height: auto;
+  padding: 0.4rem 0.8rem;
+  background: #f0f0f0;
+  border-radius: 0.5rem;
+  font-size: 14px;
+}
+.singleTag p {
+  white-space: nowrap;
+}
+.tagWraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0.4rem 0rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tagWraper div {
+  margin-right: 1.5rem;
+}
+.ytVideoTagWrap {
+  width: 95%;
+  flex: 0 0 auto;
+}
+.tagWraper:hover {
+  overflow-x: scroll;
+}
+
+.tagActive {
+  background-color: black;
+  color: white;
+}
+
+.menuIcon ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0rem 0.5rem;
+  margin-top: 1rem;
+}
+
+.menuIcon ul li {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: transparent;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+}
+.menuIcon ul li:hover {
+  background-color: #c6c6c63b;
+}
+.menuIcon ul li span {
+  font-size: 9.5px;
+  padding-top: 5px;
+}
+.menuIcon ul li p {
+  width: 1.5rem;
 }
