@@ -36,7 +36,7 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .barIcon {
@@ -46,7 +46,18 @@
 .brandImg {
   width: 6rem;
   margin-left: 1.5rem;
+  position: relative;
 }
+.brandImg span:after {
+  content: "BD";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -15px;
+  font-size: 10px;
+}
+
 .searchBox {
   display: flex;
   justify-content: center;
@@ -201,4 +212,73 @@
 }
 .menuIcon ul li p {
   width: 1.5rem;
+}
+.ytVideoWraper {
+  /* width: 95%; */
+  padding-left: 2rem;
+}
+.singleVideoCard {
+  width: 320px;
+  height: auto;
+  margin: 12px;
+}
+
+.ytVideoThumb {
+  width: 100%;
+}
+
+.ytVideoThumb img {
+  width: 100%;
+  border-radius: 10px;
+}
+.ytVideoInfo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.channelProfile {
+  width: 65px;
+  margin-right: 1rem;
+}
+
+.channelProfile img {
+  width: 100%;
+  border-radius: 100%;
+}
+.ytChannelName span {
+  width: 13px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+.ytChannelName {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  color: #474747;
+}
+
+.ytChannelName p {
+  font-size: 12px;
+}
+.ytVideoViewsandDate {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 11px;
+  margin-top: 5px;
+  color: #474747;
+}
+
+.ytVideoViewsandDate p {
+  margin-right: 5px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 320px 320px 320px 320px 320px;
+  grid-gap: 10px 12px;
 }
